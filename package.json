@@ -1,0 +1,32 @@
+{
+  "name": "shop-test",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "@sveltestrap/sveltestrap": "^6.1.0",
+    "lodash": "^4.17.21",
+    "meteor-node-stubs": "^1.2.7",
+    "simpl-schema": "^3.4.1",
+    "svelte": "^3.59.2",
+    "svelte-routing": "^2.11.0"
+  },
+  "devDependencies": {
+    "svelte-preprocess": "^5.0.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "nodeModules": {
+      "recompile": {
+        "svelte": [
+          "legacy"
+        ]
+      }
+    }
+  }
+}
